@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Oduro Lathbridge - Résumé</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #020224, #0a0a3d);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s ease;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: all 0.5s ease;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #0c0c63;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #0c0c63;
+            border-bottom: 4px solid #0c0c63;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .contact {
+            margin-bottom: 20px;
+        }
+
+        .contact-icons {
+            margin-top: 15px;
+        }
+
+        .contact a {
+            display: inline-block;
+            margin-right: 15px;
+            padding: 5px 10px;
+            background-color: #0c0c63;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .contact a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: rgba(12, 12, 99, 0.05);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .experience-item:hover, .education-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding-left: 0;
+        }
+
+        .skills li {
+            list-style: none;
+            background-color: #e0e0e0;
+            color: #0c0c63;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+
+        .theme-toggle-icon {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #0c0c63;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .theme-toggle-icon:hover {
+            transform: rotate(180deg);
+        }
+
+        .dark-mode {
+            background: linear-gradient(135deg, #000011, #05052d);
+            color: #e0e0e0;
+        }
+
+        .dark-mode .container {
+            background: rgba(31, 31, 31, 0.95);
+        }
+
+        .dark-mode h1, .dark-mode h2 {
+            color: #a8e8e3;
+        }
+
+        .dark-mode h2 {
+            border-bottom-color: #a8e8e3;
+        }
+
+        .dark-mode .contact a {
+            background-color: #a8e8e3;
+            color: #1f1f1f;
+        }
+
+        .dark-mode .experience-item, .dark-mode .education-item {
+            background-color: rgba(168, 232, 227, 0.05);
+        }
+
+        .dark-mode .skills li {
+            background-color: #2a2a2a;
+            color: #a8e8e3;
+        }
+
+        .dark-mode .theme-toggle-icon {
+            background-color: #a8e8e3;
+            color: #1f1f1f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">       
+        <header>
+            <button class="theme-toggle-icon" onclick="toggleTheme()" id="theme-toggle">
+                🌓
+            </button>
+            <h1>Emmanuel Oduro Lathbridge</h1>
+            <p class="contact">
+                Accra, GH · +233 249 576 941<br>
+                <a href="https://github.com/lathbridge" target="_blank">GitHub</a> 
+                <a href="mailto:lathbridge51@gmail.com">Email</a>
+                <a href="https://lathbridge.netlify.app/" target="_blank">Portfolio</a>
+                <a href="https://www.linkedin.com/in/emmanuel-oduro-lathbridge-8b41b517a/" target="_blank">LinkedIn</a>
+            </p>
+        </header>
+
+        <section class="profile">
+            <h2>Profile</h2>
+            <p>Aspiring software engineer with hands-on experience in web and mobile development. Adept at delivering high-quality software solutions and eager to contribute to innovative projects while advancing my career. </p>
+        </section>
+
+        <section class="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Software Developer, Asoriba Inc</h3>
+                <p>Oct 2022 – Sep 2024</p>
+                <ul>
+                    <li>Developed web applications with React, Next.js, TypeScript, Vue.js, integrating REST APIs; utilized Docker for containerization.</li>
+                    <li>Implemented automation testing with Selenium and manual testing to ensure project quality.</li>
+                    <li>Designed and optimized email templates.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Software Developer, HackScience Tech</h3>
+                <p>Jun 2023 – Jan 2024</p>
+                <ul>
+                    <li>Created backend REST APIs and integrated USSD functionalities with Python (Django).</li>
+                    <li>Developed React Native apps for online voting and wrote test scripts for code quality.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Fullstack Trainee, AmaliTech</h3>
+                <p>May 2023 – Oct 2023</p>
+                <ul>
+                    <li>Built responsive web interfaces using React.js, Angular.js, and Next.js.</li>
+                    <li>Contributed to projects using Git and developed MERN stack applications.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>IT Network Admin (Intern), Ghone TV</h3>
+                <p>Nov 2021 – Jan 2022</p>
+                <ul>
+                    <li>Assisted with networking equipment setup and troubleshooting.</li>
+                    <li>Monitored CCTV systems and managed server room configurations.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Intern, Kumasi Hive</h3>
+                <p>Sep 2021 – Nov 2021</p>
+                <ul>
+                    <li>Developed responsive UIs using React.js, HTML, CSS, and designed with Figma.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>BSc Computer Science, University of Energy & Natural Resources (UENR), Sunyani, GH</h3>
+                <p>Nov 2022</p>
+                <ul>
+                    <li>President, Science Students Association (SCISA)</li>
+                    <li>Zonal Coordinator, Ghana National Association of Adventist Students (GNAAS)</li>
+                </ul>
+            </div>
+            <div class="education-item">
+                <h3>General Science - WASSCE, St. John's School, Sekondi-Takoradi</h3>
+                <p>May 2017</p>
+                <ul>
+                    <li>General Secretary, Ghana National Association of Adventist Students (GNAAS)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <h3>Technical</h3>
+            <ul>
+                <li>Mobile & Web Application Development</li>
+                <li>Automation Testing</li>
+                <li>Data Analysis</li>
+                <li>Graphics & Video Design</li>
+            </ul>
+            <h3>Programming Stack</h3>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python, Django</li>
+                <li>React.js, Vue.js, Angular.js, Next.js</li>
+                <li>Node.js, Express.js</li>
+                <li>AWS, Docker</li>
+                <li>React Native, TypeScript</li>
+                <li>Relational & Non-Relational Databases</li>
+            </ul>
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Communication, Team Leadership</li>
+                <li>Problem Solving, Attention to Detail</li>
+                <li>Project Management</li>
+            </ul>
+        </section>
+
+        <section class="references">
+            <h2>References</h2>
+            <p>Available upon request</p>
+        </section>
+    </div>
+
+    <script>
+        function setTheme(isDark) {
+            if (isDark) {
+                document.body.classList.add('dark-mode');
+                document.getElementById('theme-toggle').innerHTML = '🌞';
+            } else {
+                document.body.classList.remove('dark-mode');
+                document.getElementById('theme-toggle').innerHTML = '🌙';
+            }
+        }
+
+        function toggleTheme() {
+            const isDark = document.body.classList.toggle('dark-mode');
+            setTheme(isDark);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check for system color scheme preference
+            const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+            
+            // Set initial theme based on system preference
+            setTheme(prefersDarkScheme.matches);
+
+            // Listen for changes in system color scheme
+            prefersDarkScheme.addListener((e) => setTheme(e.matches));
+        });
+    </script>
+</body>
+</html>
